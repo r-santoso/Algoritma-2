@@ -67,21 +67,24 @@ int main() {
 				hasil = sqrt((double)p * p + (double)l * l);
 				cout<<"Panjang diagonal : "<<hasil;
 				break;
+				
 			case 4:
 				goto akhir;
 				
 			default:
 				cout<<"Menu pilihan tidak tersedia";
+				
 		}
 		
 		cout<<"\n\nKe menu utama [Y]? ";
-		cin>> status;
+		cin>>status;
 		
-	}while (status == 'Y' || status == 'y');
+	} while (status == 'Y' || status == 'y');
 		goto awal;
 	
 	akhir:
 	system("cls");
 	cout<<"Exit Program";
 	return 0;
+	
 }
