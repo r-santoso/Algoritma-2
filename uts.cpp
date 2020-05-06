@@ -1,17 +1,18 @@
-//program hitung gaji karyawan
-
 #include <iostream>
 #include <iomanip>
+#include <conio.h>
 
 using namespace std;
 
  int main() {
     char nama[50];
-    double nim, gajiPokok, tunjanganAnak, tunjanganIstri, gajiTotal, i, j, nim;
+    long int nim;
+    double gajiPokok, tunjanganAnak, tunjanganIstri, gajiTotal, i, j;
     int jumlahAnak;
     
-    cout<<"Input Nim : ";
-    cin>>nim;
+    cout<<"Input NIM : ";
+    //cin.getline(nama, sizeof(nama));
+   //input dengan spasi
     cout<<"Input Nama : ";
     cin>>nama;
     cout<<"Input jumlah anak : ";
@@ -46,11 +47,11 @@ using namespace std;
 	cout<<"\n\tStatus\t\t: Menikah";
 	cout<<"\n\t----------------------------------------------------";
 	cout<<"\n\tJumlah Anak\t\t: "<<jumlahAnak;
-	cout<<"\n\n\tGaji Pokok\t\t: "<<setiosflags(ios::fixed)<<setprecision(0)<<gajiPokok;
-	cout<<"\n\n\tTunjangan Anak\t\t: "<<setiosflags(ios::fixed)<<setprecision(0)<<tunjanganAnak;
-	cout<<"\n\n\tTunjangan Istri\t\t: "<<setiosflags(ios::fixed)<<setprecision(0)<<tunjanganIstri;
-	cout<<"\n\n\tTotal Gaji\t\t: "<<setiosflags(ios::fixed)<<setprecision(0)<<gajiTotal;
+	cout<<"\n\n\tGaji Pokok\t\t: "<<setiosflags(ios::fixed)<<setprecision(2)<<gajiPokok;
+	cout<<"\n\n\tTunjangan Anak\t\t: "<<setiosflags(ios::fixed)<<setprecision(2)<<tunjanganAnak;
+	cout<<"\n\n\tTunjangan Istri\t\t: "<<setiosflags(ios::fixed)<<setprecision(2)<<tunjanganIstri;
+	cout<<"\n\n\tTotal Gaji\t\t: "<<setiosflags(ios::fixed)<<setprecision(2)<<gajiTotal;
 	cout<<"\n\t****************************************************\n";
-	
-  return 0;
+
+    return 0;
 }
