@@ -1,6 +1,7 @@
+//program gaji karyawan
+
 #include <iostream>
 #include <iomanip>
-#include <conio.h>
 
 using namespace std;
 
@@ -11,8 +12,8 @@ using namespace std;
     int jumlahAnak;
     
     cout<<"Input NIM : ";
-    //cin.getline(nama, sizeof(nama));
-   //input dengan spasi
+    cin>>nim;
+    //inputan nama tidak menggunakan spasi
     cout<<"Input Nama : ";
     cin>>nama;
     cout<<"Input jumlah anak : ";
